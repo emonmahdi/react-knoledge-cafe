@@ -2,9 +2,9 @@
   {
     "id": 1,
     "title": "Learning React for Beginners",
-    "cover": "https://i.ibb.co.com/v3pGYWS/concept-front-end-development-with-person-laptop-102583-4758.jpg",
+    "cover": "https://i.ibb.co.com/SP0y4hZ/1.jpg",
     "author_name": "Jane Doe",
-    "author_img": "https://i.ibb.co.com/f1ZJbzq/man-purple-vest-is-writing-notebook-with-pen-cup-coffee-1239757-7136.jpg",
+    "author_img": "https://i.ibb.co.com/02YwXrt/boy1.png",
     "posted_date": "2024-10-01",
     "reading_time": 5,
     "hashtags": ["react", "javascript", "frontend", "web development"]
@@ -12,9 +12,9 @@
   {
     "id": 2,
     "title": "Mastering Node.js",
-    "cover": "https://i.ibb.co.com/k8yY040/programming-script-text-coding-word-53876-121207.jpg",
+    "cover": "https://i.ibb.co.com/LdnnFG4/2.png",
     "author_name": "John Smith",
-    "author_img": "https://example.com/images/john-smith.jpg",
+    "author_img": "https://i.ibb.co.com/26nS9Pf/boy2.jpg",
     "posted_date": "2024-09-15",
     "reading_time": 8,
     "hashtags": ["nodejs", "backend", "server", "express"]
@@ -22,9 +22,9 @@
   {
     "id": 3,
     "title": "Guide to Full Stack Development",
-    "cover": "https://example.com/images/fullstack-cover.jpg",
+    "cover": "https://i.ibb.co.com/SP6f0Wp/3.png",
     "author_name": "Alice Brown",
-    "author_img": "https://example.com/images/alice-brown.jpg",
+    "author_img": "https://i.ibb.co.com/MsCKz78/girl1.jpg",
     "posted_date": "2024-08-30",
     "reading_time": 10,
     "hashtags": ["fullstack", "web development", "mern", "career"]
@@ -32,9 +32,9 @@
   {
     "id": 4,
     "title": "Understanding REST APIs",
-    "cover": "https://example.com/images/api-cover.jpg",
+    "cover": "https://i.ibb.co.com/5rpQJgF/4.jpg",
     "author_name": "Bob White",
-    "author_img": "https://example.com/images/bob-white.jpg",
+    "author_img": "https://i.ibb.co.com/sRBvDh5/girl2.jpg",
     "posted_date": "2024-07-20",
     "reading_time": 7,
     "hashtags": ["api", "rest", "backend", "web services"]
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "title": "Exploring the World of JavaScript",
-    "cover": "https://example.com/images/js-cover.jpg",
+    "cover": "https://i.ibb.co.com/5rpQJgF/4.jpg",
     "author_name": "Clara Green",
     "author_img": "https://example.com/images/clara-green.jpg",
     "posted_date": "2024-10-15",
