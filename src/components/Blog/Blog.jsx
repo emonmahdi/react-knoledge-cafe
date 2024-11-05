@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
+import { CiBookmark } from "react-icons/ci";
 
-export const Blog = ({ blog }) => {
+export const Blog = ({ blog, handleBookMark }) => {
   const {
     title,
     cover,
@@ -15,8 +16,8 @@ export const Blog = ({ blog }) => {
   return (
     <div className="mb-12">
       <img src={cover} alt="" />
-      <h3>{title}</h3>
-      <div className="flex justify-between items-center">
+
+      <div className="flex justify-between items-center m-3">
         <div className="flex gap-3">
           <img src={author_img} width={"50px"} alt="" />
           <div>
@@ -26,8 +27,20 @@ export const Blog = ({ blog }) => {
         </div>
         <div>
           <span>{reading_time} min read</span>
+          <button onClick={handleBookMark} style={{ marginLeft: "5px" }}>
+            {" "}
+            <CiBookmark />{" "}
+          </button>
         </div>
       </div>
+      <h3 style={{ fontSize: "24px", fontWeight: "700", padding: "10px 0" }}>
+        {title}
+      </h3>
+      {hashtags.map((hash, index) => (
+        <span key={index} style={{ padding: "5px" }}>
+          #{hash}
+        </span>
+      ))}
     </div>
   );
 };
