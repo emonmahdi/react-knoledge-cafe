@@ -15,7 +15,7 @@ export const Blogs = ({ handleBookMark }) => {
 
   return (
     <div className="md:w-2/3 p-16">
-      <h2>Blogs {blogs.legnth}</h2>
+      <h2>Blogs {blogs.length}</h2>
       {blogs.map((blog) => (
         <Blog handleBookMark={handleBookMark} key={blog.id} blog={blog} />
       ))}

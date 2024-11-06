@@ -5,10 +5,12 @@ import { Bookmarks } from "./components/Bookmarks/Bookmarks";
 import { Header } from "./components/Header/Header";
 
 function App() {
-  const [bookMarks, setBookMarks] = useState();
+  const [bookMarks, setBookMarks] = useState([]);
 
-  const handleBookMark = () => {
+  const handleBookMark = (blog) => {
     console.log("click the bookmark");
+    const newBookMarks = [...bookMarks, blog];
+    setBookMarks(newBookMarks);
   };
 
   return (
@@ -16,7 +18,7 @@ function App() {
       <Header />
       <div className="flex">
         <Blogs handleBookMark={handleBookMark} />
-        <Bookmarks />
+        <Bookmarks bookMarks={bookMarks} />
       </div>
     </>
   );

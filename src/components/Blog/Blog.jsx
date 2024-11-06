@@ -27,7 +27,7 @@ export const Blog = ({ blog, handleBookMark }) => {
         </div>
         <div>
           <span>{reading_time} min read</span>
-          <button onClick={handleBookMark} style={{ marginLeft: "5px" }}>
+          <button onClick={() => handleBookMark(blog)} style={{ marginLeft: "5px" }}>
             {" "}
             <CiBookmark />{" "}
           </button>
