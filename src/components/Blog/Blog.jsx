@@ -2,8 +2,9 @@
 import PropTypes from "prop-types";
 import { CiBookmark } from "react-icons/ci";
 
-export const Blog = ({ blog, handleBookMark }) => {
+export const Blog = ({ blog, handleBookMark, handleMarkAsRead }) => {
   const {
+    id,
     title,
     cover,
     author_name,
@@ -12,7 +13,6 @@ export const Blog = ({ blog, handleBookMark }) => {
     reading_time,
     hashtags,
   } = blog;
-  console.log(blog);
   return (
     <div className="mb-12">
       <img src={cover} alt="" />
@@ -27,7 +27,10 @@ export const Blog = ({ blog, handleBookMark }) => {
         </div>
         <div>
           <span>{reading_time} min read</span>
-          <button onClick={() => handleBookMark(blog)} style={{ marginLeft: "5px" }}>
+          <button
+            onClick={() => handleBookMark(blog)}
+            style={{ marginLeft: "5px" }}
+          >
             {" "}
             <CiBookmark />{" "}
           </button>
@@ -36,11 +39,19 @@ export const Blog = ({ blog, handleBookMark }) => {
       <h3 style={{ fontSize: "24px", fontWeight: "700", padding: "10px 0" }}>
         {title}
       </h3>
-      {hashtags.map((hash, index) => (
-        <span key={index} style={{ padding: "5px" }}>
-          #{hash}
-        </span>
-      ))}
+      <div>
+        {hashtags.map((hash, index) => (
+          <span key={index} style={{ padding: "5px" }}>
+            #{hash}
+          </span>
+        ))}
+      </div>
+      <button
+        onClick={() => handleMarkAsRead(id, reading_time)}
+        className="underline mt-3"
+      >
+        Mark as Read
+      </button>
     </div>
   );
 };
