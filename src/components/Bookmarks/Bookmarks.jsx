@@ -9,8 +9,8 @@ export const Bookmarks = ({ bookMarks, readingTime }) => {
       </h2>
       <p>Bookmarks : {bookMarks?.length}</p>
       <div className="p-4 bg-gray-500">
-        {bookMarks.map((bookMark) => (
-          <BookMark key={bookMark.id} bookMark={bookMark} />
+        {bookMarks.map((bookMark, index) => (
+          <BookMark key={index} bookMark={bookMark} />
         ))}
       </div>
     </div>

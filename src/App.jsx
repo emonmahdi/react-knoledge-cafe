@@ -21,7 +21,7 @@ function App() {
 
     // remove the reading mark read item
     console.log("remove the reading blog", id);
-    const removeMarkRead = bookMarks.filter((bookMark) => bookMark.id != id);
+    const removeMarkRead = bookMarks.filter((bookMark) => bookMark?.id !== id);
     setBookMarks(removeMarkRead);
   };
 
